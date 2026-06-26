@@ -47,6 +47,13 @@ ram.runtime = "50M"
     type = "string"
     optional = true
 
+    [install.cors_allowed_origins]
+    ask.en = "Web origins allowed to call this proxy from a browser (comma-separated, exact match, e.g. https://app.example.com). Leave empty to block all cross-origin browser requests; this can be changed later from the app's config panel."
+    ask.fr = "Origines web autorisées à appeler ce proxy depuis un navigateur (séparées par des virgules, correspondance exacte). Laisser vide pour bloquer toute requête cross-origin ; modifiable plus tard depuis le panneau de configuration de l'application."
+    type = "string"
+    default = ""
+    optional = true
+
     [install.init_main_permission]
     type = "group"
     default = "visitors"
